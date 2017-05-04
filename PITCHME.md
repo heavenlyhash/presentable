@@ -32,7 +32,24 @@ And reports the results.
 
 ---
 
+Reproducible Environment +
+Reproducible Materials +
+=>
+Reproducible Results (!maybe)
+
+---
+
+## Reproducible Input Materials
+
+Version control: source, *and beyond!*
+
+
+
+---
+
 ## Formulas
+
+An indivisible, atomic unit of work.
 
 ---
 
@@ -43,3 +60,32 @@ It's a free-standing description of:
 - A list of input filesystem materials
 - A command (or script) to run in a container, provisioned with those filesystems
 - A list of output filesystems to store as a product
+
+---
+
+(FP trigger warning)
+
+---
+
+Formulas are like a Pure Function:
+
+```golang
+repeatrRun(
+	input []{path,hash},
+	script string,
+	save []path,
+) (
+	result []{path,hash}
+)
+```
+
+---
+
+**Formulas are memoizable.**
+
+```
+key := hash(inputs, script, save)
+results := repeatrRun(inputs, script, save)
+
+memo[key] = results!
+```
