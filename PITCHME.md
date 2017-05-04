@@ -33,17 +33,63 @@ And reports the results.
 ---
 
 Reproducible Environment +
+
 Reproducible Materials +
+
 =>
+
 Reproducible Results (!maybe)
 
 ---
 
 ## Reproducible Input Materials
 
-Version control: source, *and beyond!*
+Version control: for source, *and b e y o n d !*
 
+---
 
+Building software usually starts with a git checkout.
+
+Building software usually starts with *a git hash*.
+
+---
+
+Let's do that for everything!
+
+[todo: "HASH ALL THE THINGS" image]
+
+---
+
+[todo: "HASH HASH HASH HASH" seizuregif]
+
+---
+
+Let's put together a filesystem like this:
+
+```yaml
+inputs:
+    "/":
+        type: "tar"
+        hash: "aLMH4qK1EdlPDavdhErOs0BPxqO0i6lUaeRE4DuUmnNMxhHtF56gkoeSulvwWNqT"
+    "/app/go/":
+        type: "tar"
+        hash: "vbl0TwPjBrjoph65IaWxOy-Yl0MZXtXEDKcxodzY0_-inUDq7rPVTEDvqugYpJAH"
+    "/task/repeatr/":
+        type: "git"
+        hash: "940ea614c3a3eeb410afd859b25ca6be648033b9"
+```
+
+Huzzah -- Reproducible environment!
+
+---
+
+*>>> Zoom out >>>*
+
+Your CI system reports the git hash it built from, right?
+
+Hash that list of inputs.
+
+Now your CI system can report *that*.
 
 ---
 
