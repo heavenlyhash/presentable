@@ -68,15 +68,15 @@ Let's put together a filesystem like this:
 
 ```yaml
 inputs:
-    "/":
-        type: "tar"
-        hash: "aLMH4qK1EdlPDavdhErOs0BPxqO0i6lUaeRE4DuUmnNMxhHtF56gkoeSulvwWNqT"
-    "/app/go/":
-        type: "tar"
-        hash: "vbl0TwPjBrjoph65IaWxOy-Yl0MZXtXEDKcxodzY0_-inUDq7rPVTEDvqugYpJAH"
-    "/task/repeatr/":
-        type: "git"
-        hash: "940ea614c3a3eeb410afd859b25ca6be648033b9"
+   "/":
+      type: "tar"
+      hash: "aLMH4qK1EdlPDavdhErOs0BPxqO0i6lUaeRE4DuUmnNMx"
+   "/app/go/":
+      type: "tar"
+      hash: "vbl0TwPjBrjoph65IaWxOy-Yl0MZXtXEDKcxodzY0_-in"
+   "/task/repeatr/":
+      type: "git"
+      hash: "940ea614c3a3eeb410afd859b25ca6be648033b9"
 ```
 
 Huzzah -- Reproducible environment!
