@@ -9,7 +9,7 @@ Repeatr is not a build tool.
 
 ---
 
-Repeatr is a "computation addressable" system.
+Repeatr is a "<span style="color:orange">computation addressable</span>" system.
 
 Computation definition|representation|specification|...
 
@@ -18,6 +18,16 @@ Something like that.  We need to make up words for it because this is not a comm
 ---
 
 You can use it to produce better build tools and package management.
+
+---
+
+Reproducible Environment +
+
+Reproducible Materials +
+
+=>
+
+Reproducible Results <span style="color:grey;font-size:80%">(maybe!)</span>
 
 ---
 
@@ -32,19 +42,9 @@ And reports the results.
 
 ---
 
-Reproducible Environment +
-
-Reproducible Materials +
-
-=>
-
-Reproducible Results (!maybe)
-
----
-
 ## Reproducible Input Materials
 
-Version control: for source, *and b e y o n d !*
+Version control: for source, *and <span style="font-size:110%">b e <span style="font-size:110%">y o <span style="font-size:110%">n d !</span></span></span>*
 
 ---
 
@@ -89,7 +89,7 @@ Your oldskoole CI system reports the git hash it built.
 
 Upgrade time.
 
-Let's build a CI system reports *all* the hashes it built from.
+Let's build a CI system reports <span style="color:orange">*all*</span> the hashes it built from.
 
 ---
 
