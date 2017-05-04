@@ -83,13 +83,13 @@ Huzzah -- Reproducible environment!
 
 ---
 
-*> > >   Z o o m   o u t   > > >*
+*> > > &nbsp; Z o o m &nbsp; o u t &nbsp; > > >*
 
-Your oldskoole CI system reports the git hash it built from.
+Your oldskoole CI system reports the git hash it built.
 
-We can do it better now:
+Upgrade time.
 
-Let's build a CI system that can report *all* the hashes it built from.
+Let's build a CI system reports *all* the hashes it built from.
 
 ---
 
@@ -133,5 +133,22 @@ repeatrRun(
 key := hash(inputs, script, save)
 results := repeatrRun(inputs, script, save)
 
-memo[key] = results!
+memo.put(key => results)
 ```
+
+---
+
+We're here because we care about reproducible results...
+
+```
+key := hash(inputs, script, save)
+myResult := repeatrRun(inputs, script, save)
+
+otherResults := publicLog.fetch(key)
+foreach result in otherResults:
+	assert(result == myResult)
+```
+
+What if we had a global log of builds?
+
+With a natural primary key to query on?
