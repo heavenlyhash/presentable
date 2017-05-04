@@ -79,7 +79,7 @@ inputs:
       hash: "940ea614c3a3eeb410afd859b25ca6be648033b9"
 ```
 
-Huzzah -- Reproducible environment!
+We can reproduce a filesystem exactly with this info.
 
 ---
 
