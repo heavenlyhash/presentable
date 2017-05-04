@@ -83,13 +83,13 @@ Huzzah -- Reproducible environment!
 
 ---
 
-*>>> Zoom out >>>*
+*> > >   Z o o m   o u t   > > >*
 
-Your CI system reports the git hash it built from, right?
+Your oldskoole CI system reports the git hash it built from.
 
-Hash that list of inputs.
+We can do it better now:
 
-Now your CI system can report *that*.
+Let's build a CI system that can report *all* the hashes it built from.
 
 ---
 
