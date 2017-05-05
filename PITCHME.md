@@ -135,6 +135,35 @@ repeatrRun(
 
 ---
 
+```bash
+cat > the.formula <<EOF
+{
+    "inputs": {
+        "/": {type: "tar", hash: "aLMH4qK1EdlPDavdhErOs0BPxqO0i6lUaeRE4DuUmnNMxhHtF56gkoeSulvwWNqT"},
+        "/app/go/": {type: "tar", hash: "gi0Kpb-VH3TK0UBX6YmpuKsrMAUlxicPrY2YvXPo9sBQm_NsD_hKrn7pmc95zrmM"},
+        "/task/repeatr/": {type: "git", hash: "8fb1a9ebd85eadacc861b0c149221af6808270d4",
+                silo: [ "./../..", "https://github.com/polydawn/repeatr.git"]},
+    },
+    "action": {
+        cwd: "/task/repeatr/"
+        env: {"ENVVAR": "/v/a/l/u/e", "WOW": "yeah"},
+        command: {"bash", "-c", "..."}
+    },
+    "outputs": {
+        "/just/the/tip": {type: "tar", warehouse: "file+ca://./wares/"}
+    },
+}
+EOF
+repeatr run the.formula
+```
+
+```text
+// ... logs on stderr ...
+{"hai":"lo"}
+```
+
+---
+
 *sidetrack*
 
 Is this a lie?
