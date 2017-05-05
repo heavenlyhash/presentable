@@ -180,6 +180,9 @@ Yes, you *can* `cat /dev/random`
 
 We agree that if you do that, you're Bad and should Feel Bad
 
+<!-- Speaker Notes: talk about the network here!  That's as bad, or worse, that cat-random. -->
+<!-- Potentially *both ways*.  You can put bananas into redis too... -->
+
 ---
 
 **Formulas are memoizable.**
