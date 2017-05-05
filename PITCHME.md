@@ -199,6 +199,18 @@ memo.put(key => results)
 
 ---
 
+Memoized functions are the FASTEST functions
+
+```
+// key := hash(inputs, script, save)
+goFastFunction := new_memoizers(repeatrRun)
+results := goFastFunction(inputs, script, save)
+// next line is instantaneous
+already := goFastFunction(inputs, script, save)
+```
+
+---
+
 We're here because we care about reproducible results...
 
 ```
