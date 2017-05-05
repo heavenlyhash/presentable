@@ -79,8 +79,6 @@ inputs:
       hash: "940ea614c3a3eeb410afd859b25ca6be648033b9"
 ```
 
-We can reproduce a filesystem exactly with this info.
-
 ---
 
 *> > > &nbsp; Z o o m &nbsp; o u t &nbsp; > > >*
