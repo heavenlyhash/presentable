@@ -91,6 +91,12 @@ Let's build a CI system reports <span style="color:orange">*all*</span> the hash
 
 ---
 
+So we have reproducible environments.
+
+Let's do something with them...
+
+---
+
 ## Formulas
 
 An indivisible, atomic unit of work.
