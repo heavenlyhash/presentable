@@ -227,17 +227,7 @@ already := goFastFunction(inputs, script, save)
 
 ---
 
-<small>but</small> We're here because we care about reproducible results...
-
-And we know that functions aren't alwayss pure :(
-
-<span style="color:grey">cat random... date &lt; diduRLYhaveto...</span>
-
----
-
-What if we had a global log of builds?
-
----
+We're here because we care about reproducible results...
 
 ```
 key := hash(inputs, script, save)
@@ -247,5 +237,7 @@ otherResults := publicLog.fetch(key)
 foreach result in otherResults:
 	assert(result == myResult)
 ```
+
+What if we had a global log of builds?
 
 With a natural primary key to query on?
