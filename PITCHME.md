@@ -103,6 +103,10 @@ An indivisible, atomic unit of work.
 
 ---
 
+*atom*: a hypothetical particle of matter so minute as to admit of no division.
+
+---
+
 The unit of description of a computation in Repeatr is called a Formula.
 
 It's a free-standing description of:
@@ -131,7 +135,29 @@ repeatrRun(
 
 ---
 
+*sidetrack*
+
+Is this a lie?
+
+Of course it is.
+
+Kernel version, `readdir` syscall return list order, etc...
+
+---
+
+"We're all consenting adults here"
+
+Yes, you *can* `cat /dev/random`
+
+We agree that if you do that, you're Bad and should Feel Bad
+
+---
+
 **Formulas are memoizable.**
+
+---
+
+Memoization is the best
 
 ```
 key := hash(inputs, script, save)
