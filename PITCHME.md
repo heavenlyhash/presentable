@@ -197,6 +197,22 @@ results := repeatrRun(inputs, script, save)
 memo.put(key => results)
 ```
 
++++
+
+<span style="color:grey">Wait, what is "memo...ization"</span>
+
+1. Write a memo of your function and all its arguments.
+2. Write down the result.
+3. Don't run the function again.
+
+---
+
+`(+ 2 2)` `// 4`
+
+`map.put("(+ 2 2)", 4)`
+
+`(computePrimeFactors 2304920398409 239834985349875)`
+
 ---
 
 Memoized functions are the FASTEST functions
@@ -211,7 +227,17 @@ already := goFastFunction(inputs, script, save)
 
 ---
 
-We're here because we care about reproducible results...
+<small>but</small> We're here because we care about reproducible results...
+
+And we know that functions aren't alwayss pure :(
+
+<span style="color:grey">cat random... date &lt; diduRLYhaveto...</span>
+
+---
+
+What if we had a global log of builds?
+
+---
 
 ```
 key := hash(inputs, script, save)
@@ -221,7 +247,5 @@ otherResults := publicLog.fetch(key)
 foreach result in otherResults:
 	assert(result == myResult)
 ```
-
-What if we had a global log of builds?
 
 With a natural primary key to query on?
