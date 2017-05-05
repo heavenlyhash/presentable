@@ -125,11 +125,11 @@ Formulas are like a Pure Function:
 
 ```golang
 (repeatrRun,
-    /*input*/ [{"/path","hash-abcd"}, {"/path2","hash-qwer"}],
-    /*script*/ ("/bin/bash", "-c", "..."),
-	/*output*/ ["/savethis", "/and/this"],
+  /*input*/ [{"/path","hash-abcd"}, {"/path2","hash-qwer"}],
+  /*script*/ ("/bin/bash", "-c", "..."),
+  /*output*/ ["/savethis", "/and/this"],
 ) -> (
-	/*result!*/ {"/savethis": "hash-3498"; "/and/this": "hash-7894"},
+  /*result!*/ {"/savethis": "hash-3498"; "/and/this": "hash-7894"},
 )
 ```
 
