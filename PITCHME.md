@@ -404,9 +404,9 @@ Saving outputs emits a hash...
 
 ---
 
-Feed it forward...
+Feed it forward to build something new...
 
-... or look backwards.
+... or find explanations for an input: look up a published `{formula,results}` tuple with matching hash.
 
 ---
 
@@ -418,3 +418,7 @@ Feed it forward...
 
 - memoize entire builds
 - find comparable results -- O(1) hashmap lookup
+
+**Outputs are Inputs.**
+
+- recursively explain artifacts
