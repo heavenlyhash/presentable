@@ -76,7 +76,7 @@ Version control: for source, *and <span style="font-size:110%">b e <span style="
 
 Building software usually starts with a git checkout.
 
-Building software usually starts with *a git hash*.
+Building software usually starts with a git **hash**.
 
 ---
 
@@ -236,7 +236,7 @@ map.put("(+ 2 2)", 4)
 (computePrimeFactors 2304920398409 239834985349875)
 ```
 
----
++++
 
 Memoized functions are the FASTEST functions
 
@@ -248,26 +248,13 @@ results := goFastFunction(inputs, script, save)
 already := goFastFunction(inputs, script, save)
 ```
 
----
++++
 
-but Is this a lie?
-
-Of course it is.
-
-Kernel version, `readdir` syscall return list order, etc...
+Of course you may not want to *assume* your formula represents a pure function...
 
 ---
 
-"We're all consenting adults here"
-
-Yes, you *can* `cat /dev/random`
-
-We agree that if you do that, you're Bad and should Feel Bad
-
-<!-- Speaker Notes: talk about the network here!  That's as bad, or worse, that cat-random. -->
-<!-- Potentially *both ways*.  You can put bananas into redis too... -->
-
----
+**TODO figure out the section title here for output comparison** // actually put the self-identifying part first and then it's easier
 
 If you make your formula a pure function, you're awesome
 
@@ -275,13 +262,17 @@ If you don't, you're... well, at least you're going to notice
 
 ---
 
+**Formulas are self-identifying.**
+
+---
+
 We're here because we care about reproducible results...
 
 ```
-key := hash(inputs, script, save)
+setup_key := hash(inputs, script, save)
 myResult := repeatrRun(inputs, script, save)
 
-otherResults := publicLog.fetch(key)
+otherResults := publicLog.fetch(setup_key)
 foreach result in otherResults:
 	assert(result == myResult)
 ```
