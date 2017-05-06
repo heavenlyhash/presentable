@@ -17,6 +17,10 @@ Something like that.  We need to make up words for it because this is not a comm
 
 ---
 
+You can use it to produce better build tools and package management.
+
+---
+
 What "content addressable" did for version control,
 
 "computation addressable" can do for builds.
