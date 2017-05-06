@@ -205,7 +205,7 @@ memo.put(key => results)
 2. Write down the result.
 3. Don't run the function again.
 
----
++++
 
 `(+ 2 2)` `// 4`
 
