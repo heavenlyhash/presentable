@@ -1,5 +1,6 @@
+---?image=logo.png
+
 Repeatr
-=======
 
 ---
 
