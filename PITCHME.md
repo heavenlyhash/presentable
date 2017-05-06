@@ -1,6 +1,4 @@
----?image=logo.png
-
-Repeatr
+<span style='font:monospace'>Repeatr</span>
 
 ---
 
@@ -40,6 +38,12 @@ an army of robots carries it out for you.
 In a clean, sealed room.
 
 And reports the results.
+
+---
+
+- What Repeatr is not
+- What Repeatr is sorta like
+-
 
 ---
 
@@ -95,12 +99,6 @@ Let's build a CI system reports <span style="color:orange">*all*</span> the hash
 So we have reproducible environments.
 
 Let's do something with them...
-
----
-
-## Reproducible Output Gathering
-
-TODO :words:
 
 ---
 
@@ -165,7 +163,7 @@ repeatr run the.formula
 
 ```text
 // ... logs on stderr ...
-{"hai":"lo"}
+{"/just/the/tip":"3o4i0kmwrLFsRV0sLUzq3o3"}
 ```
 
 +++
