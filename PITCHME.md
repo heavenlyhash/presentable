@@ -27,8 +27,6 @@ To do this, we have to totally describe our computation.
 
 ---
 
-Reproducible Environment +
-
 Reproducible Materials +
 
 Reproducible Action
