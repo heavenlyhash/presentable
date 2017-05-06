@@ -159,7 +159,13 @@ Formulas are like a Pure Function:
 )
 ```
 
++++
+
 ---
+
+`repeatr run` is a command that takes those inputs, and emits those results as json on stdout.
+
+It's made to play nice.  (Pipe it into 'jq', etc...)
 
 ```bash
 cat > the.formula <<EOF
