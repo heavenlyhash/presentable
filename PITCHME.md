@@ -200,17 +200,63 @@ $ repeatr run the.formula
 
 ---
 
+## Result Gathering
+
+<small>*If a pure function runs in a forest...*</small>
+
+---
+
 No side-effects on your host -- only paths you list are saved
 
-No side-effects on your host -- pieces you did save only go where you say
+(And the save path on your host is also specified by you)
 
 Outputs are automatically hashed again -- easy to compare
+
+---
+
+Outputs are automatically hashed again...
+
+... and you can use that for storage
+
+Like `ls .git/objects/*`
+
+`diff` your outputs later
 
 ---
 
 If you make your formula a pure function, you're awesome
 
 If you don't, you're... well, at least you're going to notice
+
+---
+
+## All together now
+
+---
+
+**Formulas are complete descriptions.**
+
+<small>what can we do with that?</small>
+
++++
+
+"Deep Time Reproducibility"
+
+No dependencies anything outside of localhost
+
+No *logic* in fetching -- no "helpful" behavior with "interesting" side effects
+
++++
+
+If you don't have any of the assets, that's trouble
+
+But at least you **know**
+
+---
+
+**Formulas are complete descriptions.**
+
+- Deep Time reproducibility
 
 ---
 
