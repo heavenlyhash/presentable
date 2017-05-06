@@ -206,11 +206,30 @@ $ repeatr run the.formula
 
 ---
 
-No side-effects on your host -- only paths you list are saved
+When you write a formula, you list paths you want to save results from.
 
-(And the save path on your host is also specified by you)
+```
+"outputs": {
+	"/just/the/tip": {type: "tar", warehouse: "file+ca://./wares/"}
+},
+```
+
+---
+
+When you run the formula, it emits results for each output requested:
+
+```
+{"exitcode": 0, "/just/the/tip":"3o4i0kmwrLFsRV0sLUzq3o3"}
+```
 
 Outputs are automatically hashed again -- easy to compare
+
+
+---
+
+If you make your formula a pure function, you're awesome
+
+If you don't, you're... well, at least you're going to notice
 
 ---
 
@@ -220,13 +239,11 @@ Outputs are automatically hashed again...
 
 Like `ls .git/objects/*`
 
-`diff` your outputs later
-
 ---
 
-If you make your formula a pure function, you're awesome
+Don't bother naming things.  Naming is hard
 
-If you don't, you're... well, at least you're going to notice
+`diff` your outputs later
 
 ---
 
@@ -237,6 +254,20 @@ If you don't, you're... well, at least you're going to notice
 **Formulas are complete descriptions.**
 
 <small>what can we do with that?</small>
+
+---
+
+honestly, sheer convenience
+
+---
+
+
+**Formulas are complete descriptions.**
+
+<small>what can we do with that?</small>
+
+- Convenience: no toolchain questions; automatic toolchain fetch.
+- <small>...*what else?*</small>
 
 +++
 
@@ -256,6 +287,7 @@ But at least you **know**
 
 **Formulas are complete descriptions.**
 
+- Convenience: no toolchain questions; automatic toolchain fetch.
 - Deep Time reproducibility
 
 ---
@@ -356,4 +388,33 @@ With a natural primary key to query on?
 <small>what can we do with that?</small>
 
 - memoize entire builds
-- O(1) hashmap lookup for comparable results
+- find comparable results -- O(1) hashmap lookup
+
+---
+
+**Outputs are Inputs**
+
+---
+
+**Outputs are Inputs**
+
+Saving outputs emits a hash...
+
+... it's the same hash as inputs.
+
+---
+
+Feed it forward...
+
+... or look backwards.
+
+---
+
+**Formulas are complete descriptions.**
+
+- Deep Time reproducibility
+
+**Formulas are self-identifying.**
+
+- memoize entire builds
+- find comparable results -- O(1) hashmap lookup
