@@ -48,6 +48,22 @@ And reports the results.
 
 ---
 
+how
+
+do
+
+we
+
+do
+
+it
+
+---
+
+Eat the elephant one byte at a time...
+
+---
+
 ## Reproducible Input Materials
 
 Version control: for source, *and <span style="font-size:110%">b e <span style="font-size:110%">y o <span style="font-size:110%">n d !</span></span></span>*
