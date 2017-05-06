@@ -1,4 +1,5 @@
-<span style='font:monospace'>Repeatr</span>
+Repeatr
+=======
 
 ---
 
@@ -16,13 +17,21 @@ Something like that.  We need to make up words for it because this is not a comm
 
 ---
 
-You can use it to produce better build tools and package management.
+What "content addressable" did for version control,
+
+"computation addressable" can do for builds.
+
+---
+
+To do this, we have to totally describe our computation.
 
 ---
 
 Reproducible Environment +
 
 Reproducible Materials +
+
+Reproducible Action
 
 =>
 
@@ -38,12 +47,6 @@ an army of robots carries it out for you.
 In a clean, sealed room.
 
 And reports the results.
-
----
-
-- What Repeatr is not
-- What Repeatr is sorta like
--
 
 ---
 
