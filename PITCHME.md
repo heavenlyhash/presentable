@@ -97,6 +97,12 @@ Let's do something with them...
 
 ---
 
+## Reproducible Output Gathering
+
+TODO :words:
+
+---
+
 ## Formulas
 
 An indivisible, atomic unit of work.
@@ -161,7 +167,7 @@ repeatr run the.formula
 {"hai":"lo"}
 ```
 
----
++++
 
 *sidetrack*
 
@@ -171,7 +177,7 @@ Of course it is.
 
 Kernel version, `readdir` syscall return list order, etc...
 
----
++++
 
 "We're all consenting adults here"
 
@@ -181,6 +187,18 @@ We agree that if you do that, you're Bad and should Feel Bad
 
 <!-- Speaker Notes: talk about the network here!  That's as bad, or worse, that cat-random. -->
 <!-- Potentially *both ways*.  You can put bananas into redis too... -->
+
+---
+
+*> > > &nbsp; Z o o m &nbsp; o u t &nbsp; > > >*
+
+Your oldskoole CI system reports the git hash it built.
+
+Upgrade time.
+
+Let's build a CI system reports <span style="color:orange">*all*</span> the hashes it built from, and the commands used.
+
+In fact let's hash <span style="color:orange">that whole document</span>, and use that as a build identifier.
 
 ---
 
