@@ -269,8 +269,15 @@ Don't bother naming things.  Naming is hard
 
 honestly, sheer convenience
 
----
++++
 
+"just throw more machines at it"
+
+```
+r2k8s the.formula | kubectl apply -
+```
+
+---
 
 **Formulas are complete descriptions.**
 
