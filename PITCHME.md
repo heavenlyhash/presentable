@@ -169,27 +169,6 @@ repeatr run the.formula
 {"/just/the/tip":"3o4i0kmwrLFsRV0sLUzq3o3"}
 ```
 
-+++
-
-*sidetrack*
-
-Is this a lie?
-
-Of course it is.
-
-Kernel version, `readdir` syscall return list order, etc...
-
-+++
-
-"We're all consenting adults here"
-
-Yes, you *can* `cat /dev/random`
-
-We agree that if you do that, you're Bad and should Feel Bad
-
-<!-- Speaker Notes: talk about the network here!  That's as bad, or worse, that cat-random. -->
-<!-- Potentially *both ways*.  You can put bananas into redis too... -->
-
 ---
 
 *> > > &nbsp; Z o o m &nbsp; o u t &nbsp; > > >*
@@ -250,6 +229,31 @@ results := goFastFunction(inputs, script, save)
 // next line is instantaneous
 already := goFastFunction(inputs, script, save)
 ```
+
+---
+
+but Is this a lie?
+
+Of course it is.
+
+Kernel version, `readdir` syscall return list order, etc...
+
+---
+
+"We're all consenting adults here"
+
+Yes, you *can* `cat /dev/random`
+
+We agree that if you do that, you're Bad and should Feel Bad
+
+<!-- Speaker Notes: talk about the network here!  That's as bad, or worse, that cat-random. -->
+<!-- Potentially *both ways*.  You can put bananas into redis too... -->
+
+---
+
+If you make your formula a pure function, you're awesome
+
+If you don't, you're... well, at least you're going to notice
 
 ---
 
