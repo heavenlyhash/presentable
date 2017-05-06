@@ -161,8 +161,6 @@ Formulas are like a Pure Function:
 
 +++
 
----
-
 `repeatr run` is a command that takes those inputs, and emits those results as json on stdout.
 
 It's made to play nice.  (Pipe it into 'jq', etc...)
@@ -185,25 +183,40 @@ cat > the.formula <<EOF
     },
 }
 EOF
-repeatr run the.formula
 ```
 
-```text
++++
+
+`repeatr run` is a command that takes those inputs, and emits those results as json on stdout.
+
+It's made to play nice.  (Pipe it into 'jq', etc...)
+
+```
+$ repeatr run the.formula
 // ... logs on stderr ...
-{"/just/the/tip":"3o4i0kmwrLFsRV0sLUzq3o3"}
+// exactly one json object on stdout:
+{"exitcode": 0, "/just/the/tip":"3o4i0kmwrLFsRV0sLUzq3o3"}
 ```
 
 ---
 
-*> > > &nbsp; Z o o m &nbsp; o u t &nbsp; > > >*
+No side-effects on your host -- only paths you list are saved
 
-Your oldskoole CI system reports the git hash it built.
+No side-effects on your host -- pieces you did save only go where you say
 
-Upgrade time.
+Outputs are automatically hashed again -- easy to compare
 
-Let's build a CI system reports <span style="color:orange">*all*</span> the hashes it built from, and the commands used.
+---
 
-In fact let's hash <span style="color:orange">that whole document</span>, and use that as a build identifier.
+If you make your formula a pure function, you're awesome
+
+If you don't, you're... well, at least you're going to notice
+
+---
+
+**Formulas are self-identifying.**
+
+<small>what can we do with that?</small>
 
 ---
 
@@ -260,19 +273,24 @@ Of course you may not want to *assume* your formula represents a pure function..
 
 ---
 
-**TODO figure out the section title here for output comparison** // actually put the self-identifying part first and then it's easier
-
-If you make your formula a pure function, you're awesome
-
-If you don't, you're... well, at least you're going to notice
-
----
-
 **Formulas are self-identifying.**
+
+<small>what can we do with that?</small>
+
+- memoize entire builds
+- <small>...*what else?*</small>
 
 ---
 
 We're here because we care about reproducible results...
+
+Reproducible is a state of mind
+
+*I* can't say something is reproducible, only *we* can say something is reproducible
+
+---
+
+Wouldn't it be nice if we had a global log of builds?
 
 ```
 setup_key := hash(inputs, script, save)
@@ -283,6 +301,13 @@ foreach result in otherResults:
 	assert(result == myResult)
 ```
 
-What if we had a global log of builds?
-
 With a natural primary key to query on?
+
+---
+
+**Formulas are self-identifying.**
+
+<small>what can we do with that?</small>
+
+- memoize entire builds
+- O(1) hashmap lookup for comparable results
