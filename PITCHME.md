@@ -410,15 +410,10 @@ Feed it forward to build something new...
 
 ---
 
-**Formulas are complete descriptions.**
-
-- Deep Time reproducibility
-
-**Formulas are self-identifying.**
-
-- memoize entire builds
-- find comparable results -- O(1) hashmap lookup
-
-**Outputs are Inputs.**
-
-- recursively explain artifacts
+- **Formulas are complete descriptions.**
+  - Deep Time reproducibility
+- **Formulas are self-identifying.**
+  - memoize entire builds
+  - find comparable results -- O(1) hashmap lookup
+- **Outputs are Inputs.**
+  - recursively explain artifacts
